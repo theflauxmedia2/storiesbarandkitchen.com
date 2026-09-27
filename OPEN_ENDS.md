@@ -64,7 +64,7 @@ Tracked by Flaux HQ. Rules:
 - [ ] Add a "skip to content" link in `src/app/layout.tsx`; keyboard users have to tab through the fixed nav on every page. #low
 
 ## Launch & infra
-- [ ] `npm run build` fails on this machine (missing `lightningcss.darwin-arm64.node`, and the Next.js SWC binary is blocked by macOS code signature policy), so the Hostinger `/out` folder cannot be generated here. #high
+- [x] `npm run build` fails on this machine (missing `lightningcss.darwin-arm64.node`, and the Next.js SWC binary is blocked by macOS code signature policy), so the Hostinger `/out` folder cannot be generated here. #high
 - [ ] Add Hostinger rules for HTTPS, www to non-www (`https://storiesbarandkitchen.com`, matching `src/lib/seo.ts`), and a 404 that serves the exported 404 page; the repo has no `.htaccess`. #high
 - [ ] Confirm DNS for storiesbarandkitchen.com points at Hostinger and SSL is active before uploading `/out`. #high
 - [ ] Document a backup and a post-upload check for the Hostinger static export; `README.md` only says to upload `/out`. #low
