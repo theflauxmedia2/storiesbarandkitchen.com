@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Geist } from "next/font/google";
+import GoogleTag from "@/components/GoogleTag";
 import JsonLd from "@/components/JsonLd";
 import {
   DEFAULT_DESCRIPTION,
@@ -112,6 +113,7 @@ export default function RootLayout({
       <body className="min-h-full bg-background font-sans text-foreground">
         <JsonLd />
         {children}
+        <GoogleTag />
       </body>
     </html>
   );
