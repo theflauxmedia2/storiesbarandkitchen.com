@@ -17,15 +17,18 @@ import { outlets } from "@/data/outlets";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Food and Drinks",
+  title: "Stories Bar and Kitchen Menu | Food, Cocktails & Drinks",
+  absoluteTitle: true,
   description:
-    "Explore Stories Bar & Kitchen food and drinks — Indian classics, global favourites, shareable starters, signature cocktails, beers, spirits and mocktails across Bengaluru.",
+    "Explore the Stories Bar and Kitchen menu — North Indian, Chinese, Italian and Continental food, starters, desserts, signature cocktails, beers and mocktails across Bengaluru.",
   path: "/food-and-drinks",
   keywords: [
-    "Stories Bar & Kitchen menu",
-    "cocktails Bengaluru",
-    "North Indian restaurant Bangalore",
-    "mocktails Bangalore",
+    "Stories Bar and Kitchen menu",
+    "Stories HSR menu",
+    "Stories Nagarbhavi menu",
+    "Stories Rajajinagar menu",
+    "multicuisine restaurant and bar in Bengaluru",
+    "signature cocktails Bengaluru",
   ],
 });
 
@@ -219,7 +222,7 @@ export default function FoodAndDrinksPage() {
                       </span>
                     </Link>
                     <ButtonLink href={`/locations/${outlet.slug}`} size="sm">
-                      View Menu
+                      {outlet.nickname} Menu
                     </ButtonLink>
                   </li>
                 ))}

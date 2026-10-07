@@ -19,7 +19,7 @@ export const home = {
     heading: "Every Table Has a Story",
     body: "Good food, refreshing drinks, music and memorable experiences across Bengaluru.",
     intro:
-      "Welcome to Stories Bar & Kitchen, a neighbourhood destination created for relaxed lunches, casual evenings, celebrations and unforgettable nights.",
+      "Welcome to Stories Bar & Kitchen, a bar and kitchen in Bangalore with neighbourhood outlets in HSR Layout, Nagarbhavi and Rajajinagar — created for relaxed lunches, casual evenings, celebrations and unforgettable nights.",
     buttons: [
       { label: "Explore Our Locations", href: "/locations" },
       { label: "Book a Table", href: "/contact#book-a-table" },
@@ -28,14 +28,14 @@ export const home = {
   brandIntro: {
     heading: "Eat. Drink. Celebrate. Create Stories.",
     body: [
-      "Stories Bar & Kitchen brings together flavourful food, refreshing beverages, lively entertainment and welcoming spaces.",
+      "Stories Bar & Kitchen is a multicuisine restaurant and bar in Bengaluru that brings together flavourful food, refreshing beverages, lively entertainment and welcoming spaces.",
       "Whether you are meeting friends, spending time with family, catching up with colleagues or celebrating a special occasion, there is always a Stories location ready to welcome you.",
     ],
   },
   locationsSection: {
     eyebrow: "Our Locations",
     heading: "Find Your Nearest Stories",
-    body: "Explore Stories Bar & Kitchen across three neighbourhoods in Bengaluru.",
+    body: "Explore Stories Bar & Kitchen locations across three Bengaluru neighbourhoods — Stories HSR, Stories Nagarbhavi and Stories Rajajinagar — and book a table at the one nearest you.",
   },
   finalCta: {
     heading: "Your Next Story Starts Here",
@@ -98,7 +98,7 @@ export const ourStory = {
 export const locationsPage = {
   hero: {
     heading: "Three Locations. Countless Stories.",
-    body: "Discover the Stories Bar & Kitchen experience across Bengaluru. Select your nearest outlet to explore its food, drinks, ambience, events, celebrations and contact details.",
+    body: "Discover Stories Bar & Kitchen locations across Bengaluru — Stories HSR in HSR Layout, Stories Nagarbhavi and Stories Rajajinagar. Select your nearest bar and restaurant to explore its menu, ambience, events, celebrations and contact details.",
   },
 };
 
@@ -109,7 +109,7 @@ export const foodAndDrinksPage = {
   },
   intro: [
     "At Stories Bar & Kitchen, food is at the centre of every experience.",
-    "Our menu brings together Indian classics, global favourites, comforting dishes, shareable starters and indulgent desserts.",
+    "The Stories Bar and Kitchen menu is truly multicuisine, bringing together North Indian classics, Chinese and Asian favourites, Italian pasta and pizza, Continental plates, shareable starters and indulgent desserts — for vegetarians and non-vegetarians alike.",
     "Pair your meal with signature cocktails, classic beverages, beers, spirits, mocktails and refreshing non-alcoholic drinks.",
     "Menu items, prices and availability may vary by location.",
   ],
@@ -129,7 +129,7 @@ export const foodAndDrinksPage = {
   ],
   selectLocation: {
     heading: "Select Your Location",
-    body: "Choose your nearest outlet to view the correct food and beverage menu:",
+    body: "Choose your nearest outlet to explore the Stories HSR, Stories Nagarbhavi or Stories Rajajinagar menu:",
   },
   disclaimer: [
     "Menu items, prices, serving sizes and availability are subject to change.",
@@ -152,7 +152,7 @@ export const eventsPage = {
     paragraphs: [
       "Stories Bar & Kitchen is where food, drinks, music and celebrations come together.",
       "Across HSR Layout, Nagarbhavi and Rajajinagar, guests can enjoy a changing calendar of entertainment, curated experiences, corporate gatherings and celebration options.",
-      "Whether you are planning a casual evening, attending a live performance, organising a birthday or hosting a corporate party, our team will help you create an experience suited to your occasion.",
+      "Whether you are planning a casual evening, attending a live performance, organising a birthday or hosting a corporate party, our team will help you create an experience suited to your occasion — which is why so many groups choose Stories among restaurants for birthday celebrations in Bengaluru.",
     ],
   },
   upcoming: {
@@ -195,7 +195,7 @@ export const eventsPage = {
   socialCelebrations: {
     eyebrow: "Social Celebrations",
     heading: "Every Celebration Deserves a Great Story",
-    body: "Celebrate life's special moments in a vibrant and welcoming setting. Whether you are organising an intimate gathering or a large celebration, our team can assist with seating, food, beverages, entertainment and customised requirements.",
+    body: "Celebrate birthdays, anniversaries, reunions and life's special moments in a vibrant and welcoming setting. Whether you are organising an intimate birthday dinner or a large group party, our team can assist with seating, food, beverages, entertainment and customised requirements.",
   },
   celebrationsWeHost: {
     eyebrow: "Celebrations We Host",
@@ -213,7 +213,7 @@ export const eventsPage = {
   corporate: {
     eyebrow: "Corporate Parties and Events",
     heading: "Work Together. Celebrate Together.",
-    body: "Stories Bar & Kitchen provides versatile spaces for corporate gatherings, team celebrations and professional events. From informal team lunches to large employee parties, our team can help create an experience based on your organisation's requirements.",
+    body: "Looking for restaurants for corporate parties in Bangalore? Stories Bar & Kitchen provides versatile spaces in HSR Layout, Nagarbhavi and Rajajinagar for office parties, team dinners, team outings and professional events. From informal team lunches to large employee parties, our team can help create an experience based on your organisation's requirements.",
     occasions: [
       "Team lunches",
       "Team dinners",
@@ -382,12 +382,12 @@ export const galleryPage = {
 export const contactPage = {
   hero: {
     heading: "Contact Stories Bar & Kitchen",
-    body: "Bookings, celebrations, events, corporate parties, enquiries or feedback—connect with your nearest Stories location.",
+    body: "Table reservations, celebrations, events, corporate parties, enquiries or feedback—call, WhatsApp or book online with Stories HSR, Stories Nagarbhavi or Stories Rajajinagar.",
   },
   booking: {
     eyebrow: "Book a Table",
     heading: "Reserve Your Table",
-    body: "Choose your nearest Stories location to reserve a table through our online booking system.",
+    body: "Make your Stories Bar and Kitchen reservations online — choose your nearest location to book a table in HSR Layout, Nagarbhavi or Rajajinagar.",
     submitLabel: "Reserve a Table",
     confirmation: {
       heading: "Thank you for choosing Stories Bar & Kitchen.",
@@ -404,7 +404,7 @@ export const contactPage = {
 
 export const footerContent = {
   brandDescription:
-    "Stories Bar & Kitchen is a Bengaluru dining and entertainment destination bringing together food, beverages, music and memorable experiences across HSR Layout, Nagarbhavi and Rajajinagar.",
+    "Stories Bar & Kitchen is a multicuisine restaurant and bar in Bengaluru bringing together food, beverages, music and memorable experiences across HSR Layout, Nagarbhavi and Rajajinagar.",
   quickLinks: [
     { href: "/", label: "Home" },
     { href: "/our-story", label: "Story" },

@@ -38,18 +38,12 @@ export async function generateMetadata({
     description: outlet.seoDescription,
     path: `/locations/${outlet.slug}`,
     absoluteTitle: true,
-    keywords: [
-      `Stories Bar & Kitchen ${outlet.name}`,
-      `${outlet.name} bar and kitchen`,
-      `${outlet.name} Bengaluru restaurant`,
-      "book a table Bengaluru",
-      ...outlet.cuisines.slice(0, 4),
-    ],
+    keywords: outlet.seoKeywords,
     image: {
       url: outletImagery[outlet.slug]?.schemaImage ?? brandImagery.homeHero,
       width: outletImagery[outlet.slug]?.schemaImageWidth ?? DEFAULT_OG_IMAGE.width,
       height: outletImagery[outlet.slug]?.schemaImageHeight ?? DEFAULT_OG_IMAGE.height,
-      alt: `${outlet.fullTitle} — dining and bar ambience in Bengaluru`,
+      alt: `${outlet.fullTitle} — bar and restaurant in ${outlet.name}, Bengaluru`,
     },
   });
 }
@@ -71,9 +65,23 @@ export default async function LocationPage({
     `Hi Stories Bar & Kitchen — I have a question about ${outlet.fullTitle}.`,
   );
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: outlet.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+    })),
+  };
+
   return (
     <>
       <BreadcrumbJsonLd items={locationTrail(outlet.name, outlet.slug)} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Navbar />
       <main>
         {/* Cinematic hero */}
@@ -81,7 +89,7 @@ export default async function LocationPage({
           <div className="absolute inset-0" aria-hidden>
             <Image
               src={imagery.hero}
-              alt={`${outlet.fullTitle} — ambience`}
+              alt={`${outlet.fullTitle} — bar and restaurant ambience in ${outlet.name}`}
               fill
               preload
               loading="eager"
@@ -94,8 +102,10 @@ export default async function LocationPage({
           </div>
 
           <div className="relative z-10 container-site">
-            <p className="eyebrow mb-5">Stories Bar &amp; Kitchen</p>
             <h1 className="headline-xl text-[clamp(3rem,9vw,6rem)] text-foreground">
+              <span className="mb-5 block font-sans not-italic">
+                <span className="eyebrow">Stories Bar &amp; Kitchen</span>
+              </span>
               <em>{outlet.shortName}</em>
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-foreground/85 md:text-lg">
@@ -182,7 +192,7 @@ export default async function LocationPage({
             <Reveal className="frame-gold img-zoom relative aspect-[4/5]">
               <Image
                 src={brandImagery.foodHero}
-                alt="Signature dishes at Stories Bar & Kitchen"
+                alt={`Signature dishes at ${outlet.nickname}, ${outlet.name}`}
                 fill
                 unoptimized
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -217,7 +227,7 @@ export default async function LocationPage({
                 eyebrow="Events and Experiences"
                 title={
                   <>
-                    What&apos;s happening at Stories <em>{outlet.shortName}</em>
+                    Events and nightlife at Stories <em>{outlet.shortName}</em>
                   </>
                 }
                 lede={outlet.eventsBody}
@@ -248,7 +258,7 @@ export default async function LocationPage({
             <Reveal className="frame-gold img-zoom relative order-1 aspect-[4/5] lg:order-2">
               <Image
                 src={brandImagery.drinksFeature}
-                alt="Signature berry cocktails at Stories Bar & Kitchen"
+                alt={`Signature cocktails at ${outlet.nickname}, ${outlet.name}`}
                 fill
                 unoptimized
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -366,6 +376,46 @@ export default async function LocationPage({
               <p className="eyebrow mb-6">Find Us</p>
               <div className="frame-gold">
                 <MapEmbed query={outlet.address} title={outlet.fullTitle} />
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* FAQs */}
+        <section className="border-t border-line section-pad">
+          <div className="container-site max-w-3xl">
+            <SectionHeading
+              chapter="07"
+              eyebrow="FAQs"
+              title={
+                <>
+                  Questions about Stories <em>{outlet.shortName}</em>
+                </>
+              }
+            />
+            <Reveal delay={0.1}>
+              <div className="mt-10">
+                {outlet.faqs.map((faq) => (
+                  <details
+                    key={faq.question}
+                    className="group border-t border-line py-5 last:border-b"
+                  >
+                    <summary className="flex cursor-pointer list-none items-baseline justify-between gap-6 [&::-webkit-details-marker]:hidden">
+                      <h3 className="font-display text-xl text-foreground transition-colors group-hover:text-accent-bright md:text-2xl">
+                        {faq.question}
+                      </h3>
+                      <span
+                        aria-hidden
+                        className="shrink-0 text-accent transition-transform group-open:rotate-45"
+                      >
+                        +
+                      </span>
+                    </summary>
+                    <p className="mt-4 text-base leading-relaxed text-muted">
+                      {faq.answer}
+                    </p>
+                  </details>
+                ))}
               </div>
             </Reveal>
           </div>

@@ -23,14 +23,14 @@ export const metadata: Metadata = createPageMetadata({
   path: "/",
   absoluteTitle: true,
   keywords: [
-    "Stories Bar & Kitchen Bengaluru",
-    "bar and kitchen Bangalore",
-    "restaurant HSR Layout",
-    "Nagarbhavi restaurant and bar",
-    "Rajajinagar rooftop dining",
-    "book a table Bangalore",
-    "live music restaurant Bengaluru",
-    "birthday celebration restaurant Bangalore",
+    "Stories Bar and Kitchen",
+    "Stories Bar and Kitchen Bangalore",
+    "Stories Bar and Kitchen Bengaluru",
+    "bar and kitchen in Bangalore",
+    "multicuisine restaurant and bar in Bengaluru",
+    "restaurants in HSR Layout",
+    "restaurants in Nagarbhavi",
+    "restaurants in Rajajinagar",
   ],
   image: {
     url: brandImagery.homeHeroSlides[0].src,
@@ -95,7 +95,7 @@ export default function HomePage() {
                     A taste of what&apos;s <em>cooking</em>
                   </>
                 }
-                lede="Indian classics, wok-tossed Asian favourites, continental comforts and indulgent desserts — every plate photographed at our own tables."
+                lede="North Indian classics, wok-tossed Chinese and Asian favourites, Italian and Continental comforts and indulgent desserts from our multicuisine kitchen — every plate photographed at our own tables."
               />
               <Reveal delay={0.15}>
                 <ButtonLink href="/food-and-drinks" variant="secondary">
@@ -151,7 +151,7 @@ export default function HomePage() {
                     When the sun sets, the <em>stories</em> begin
                   </>
                 }
-                lede="As evening arrives, the lights dim, the music rises and every Stories location turns into a stage for the night."
+                lede="As evening arrives, the lights dim, the music rises and every Stories location — in HSR Layout, Nagarbhavi and Rajajinagar — turns into a stage for Bengaluru nightlife, with live music, DJ nights and match screenings."
               />
               <Reveal delay={0.1}>
                 <ul className="mt-8 grid grid-cols-2 gap-x-6 gap-y-3">

@@ -73,7 +73,7 @@ export default function Hero() {
           className="max-w-4xl"
         >
           <motion.p variants={variants} className="eyebrow mb-6 [text-shadow:0_1px_16px_rgba(8,6,6,0.6)]">
-            Bar · Kitchen · Live Music · Celebrations
+            Stories Bar &amp; Kitchen · Bengaluru
           </motion.p>
 
           <motion.h1
