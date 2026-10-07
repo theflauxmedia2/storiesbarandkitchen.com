@@ -8,7 +8,13 @@ function outletNode(outlet: (typeof outlets)[number]) {
     "@type": "Restaurant",
     "@id": `${SITE_URL}/locations/${outlet.slug}/#restaurant`,
     name: `${SITE_NAME} — ${outlet.name}`,
+    alternateName: outlet.nickname,
+    description: outlet.seoDescription,
     image: `${SITE_URL}${heroImage}`,
+    areaServed: {
+      "@type": "Place",
+      name: `${outlet.name}, Bengaluru`,
+    },
     url: absoluteUrl(`/locations/${outlet.slug}`),
     telephone: outlet.phone,
     email: outlet.email,
@@ -99,7 +105,12 @@ export default function JsonLd() {
       image: `${SITE_URL}/logo.png`,
       logo: `${SITE_URL}/logo.png`,
       description:
-        "Stories Bar & Kitchen is a Bengaluru dining and entertainment destination bringing together food, beverages, music and memorable experiences across three neighbourhoods.",
+        "Stories Bar & Kitchen is a multicuisine restaurant and bar in Bengaluru bringing together food, beverages, music and memorable experiences across HSR Layout, Nagarbhavi and Rajajinagar.",
+      alternateName: [
+        "Stories Bar and Kitchen",
+        "Stories Bar and Kitchen Bangalore",
+        "Stories Bar and Kitchen Bengaluru",
+      ],
       email: siteConfig.email,
       servesCuisine: [
         "North Indian",

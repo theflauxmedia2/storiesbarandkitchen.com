@@ -5,10 +5,10 @@ export const SITE_NAME = "Stories Bar & Kitchen";
 export const SITE_LOCALE = "en_IN";
 
 export const DEFAULT_TITLE =
-  "Stories Bar & Kitchen — Bengaluru Bar, Kitchen & Live Music";
+  "Stories Bar and Kitchen Bangalore | Multicuisine Restaurant & Bar";
 
 export const DEFAULT_DESCRIPTION =
-  "Stories Bar & Kitchen brings food, drinks, live music and celebrations to HSR Layout, Nagarbhavi and Rajajinagar. Book your table in Bengaluru today.";
+  "Stories Bar & Kitchen is a multicuisine restaurant and bar in Bengaluru, with outlets in HSR Layout, Nagarbhavi and Rajajinagar. Food, cocktails, live music and parties.";
 
 export const DEFAULT_OG_IMAGE = {
   url: "/og-image.png",

@@ -18,16 +18,18 @@ import { outlets } from "@/data/outlets";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Events, Celebrations & Experiences",
+  title: "Events, Birthday & Corporate Parties",
   description:
-    "Live music, DJ nights, karaoke, sports screenings, birthdays and corporate parties at Stories Bar & Kitchen across HSR Layout, Nagarbhavi and Rajajinagar.",
+    "Live music, DJ nights, karaoke and sports screenings, plus birthday and corporate party venues in Bengaluru — Stories Bar & Kitchen in HSR Layout, Nagarbhavi and Rajajinagar.",
   path: "/events",
   keywords: [
-    "live music Bengaluru",
-    "DJ night Bangalore",
-    "corporate party venue Bengaluru",
-    "birthday party restaurant Bangalore",
-    "Stories Bar & Kitchen events",
+    "restaurants for corporate parties in Bangalore",
+    "restaurants for birthday celebrations in Bengaluru",
+    "Stories HSR events",
+    "Stories Nagarbhavi events",
+    "Stories Rajajinagar events",
+    "DJ nights in HSR Layout",
+    "live music in HSR Layout",
   ],
 });
 
@@ -189,7 +191,7 @@ export default function EventsPage() {
                           {String(i + 1).padStart(2, "0")}
                         </span>
                         <span className="font-display text-xl text-foreground transition-colors group-hover:text-accent-bright">
-                          {o.shortName}
+                          {o.nickname} Events
                         </span>
                       </Link>
                       <ButtonLink

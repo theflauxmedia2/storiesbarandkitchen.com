@@ -17,15 +17,18 @@ import { createPageMetadata } from "@/lib/seo";
 import { MapPinIcon, PhoneIcon } from "@/components/icons";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Contact Us & Book a Table",
+  title: "Reservations, Contact & Book a Table",
   description:
-    "Book a table or enquire about events at Stories Bar & Kitchen. Call, WhatsApp or visit HSR Layout, Nagarbhavi and Rajajinagar in Bengaluru.",
+    "Stories Bar and Kitchen reservations — book a table or call Stories HSR, Stories Nagarbhavi or Stories Rajajinagar. Contact numbers, WhatsApp and directions in Bengaluru.",
   path: "/contact",
   keywords: [
-    "book a table Stories Bar & Kitchen",
-    "Stories Bar & Kitchen contact",
-    "HSR Layout booking",
-    "Bengaluru restaurant reservation",
+    "Stories Bar and Kitchen reservations",
+    "Stories HSR table booking",
+    "Stories Nagarbhavi table booking",
+    "Stories Rajajinagar table booking",
+    "Stories HSR contact number",
+    "Stories Nagarbhavi contact number",
+    "Stories Rajajinagar contact number",
   ],
 });
 

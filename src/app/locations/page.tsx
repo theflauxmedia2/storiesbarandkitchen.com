@@ -10,16 +10,19 @@ import { brandImagery } from "@/data/imagery";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Locations in Bengaluru",
+  title: "Stories Bar and Kitchen Locations | HSR, Nagarbhavi, Rajajinagar",
+  absoluteTitle: true,
   description:
-    "Find Stories Bar & Kitchen across Bengaluru — HSR Layout, Nagarbhavi and Rajajinagar. Explore food, drinks, events and directions for each outlet.",
+    "Find Stories Bar & Kitchen locations across Bengaluru — Stories HSR, Stories Nagarbhavi and Stories Rajajinagar. Menus, events, timings and directions for each bar and restaurant.",
   path: "/locations",
   keywords: [
-    "Stories Bar & Kitchen locations",
-    "HSR Layout",
-    "Nagarbhavi",
-    "Rajajinagar",
-    "Bengaluru restaurants",
+    "Stories Bar and Kitchen locations",
+    "Stories HSR",
+    "Stories Nagarbhavi",
+    "Stories Rajajinagar",
+    "bar and restaurant in HSR Layout",
+    "bar and restaurant in Nagarbhavi",
+    "bar and restaurant in Rajajinagar",
   ],
 });
 
@@ -38,7 +41,7 @@ export default function LocationsPage() {
           }
           body={locationsPage.hero.body}
           image={brandImagery.ourStory.day}
-          imageAlt="Rooftop seating at Stories Bar & Kitchen"
+          imageAlt="Seating at Stories Bar & Kitchen, Bengaluru"
         />
 
         <section className="border-t border-line section-pad">
